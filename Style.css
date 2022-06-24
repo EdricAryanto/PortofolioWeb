@@ -1,0 +1,391 @@
+*{padding: 0; margin: 0}
+
+.container {width: 1000px; margin: auto;}
+
+header {height: 125px; background:#e9ba55; overflow: hidden;}
+header .kiri img {width: 120px; height: 90px; margin: 15px 0 0 35px;; float: left;}
+header .kanan {float: left; font-size: 20px; color: white; margin-top: 15px; margin-left: 20px;}
+header .kiri img {
+                clip-path: ellipse();
+}
+
+nav {position: sticky;
+    margin-bottom: 20px;
+    top: 0px;
+    background: goldenrod;
+    height: 40px;
+    line-height: 40px;
+}
+
+menu {position: relative;
+    height: 40px;
+    line-height: 40px;
+}
+
+menu ul li {float: left; list-style: none; background: goldenrod;}
+menu ul li a {margin-right: auto;
+            text-decoration: none;
+            padding: 3px 15px;
+}
+menu ul li ul {display: none;}
+menu ul li:hover > ul {display: block;}
+menu ul li ul {position: absolute;}
+menu ul li ul li {float: none;
+    position: relative;
+}
+menu ul li:hover {background: #90ccb8;}
+menu ul li a:hover {color: goldenrod;}
+menu ul ul ul {left: 100%;
+    top: 0;
+    width: 150px;
+}
+
+
+article {overflow: hidden;}
+article h1 {color: #e9ba55; margin-bottom: 10px; font: size 30px; font-family: 'Courier New';}
+article h2 {color: #e9ba55; text-align: center; font: size 30px; font-family: 'Courier New'; padding: 15px;}
+article p {text-align: justify; margin-bottom: 15px;}
+
+article .kiri {width: 300px; float: left;}
+article .kiri h1 {margin-left: 10px;}
+article .kiri .kiritambah img {width: 290px; height: 100px; float: left; padding: 6px 10px 0 10px;}
+article .kiri .kiritambah h6 {color: goldenrod; font-size: 25px; text-align: justify; font-family: 'Courier New'; margin-bottom: 10px; margin: auto;}
+article .kiri .kiritambah p {text-align: justify;}
+
+
+article .kiri .kiritengah {background: goldenrod; padding: 15px; margin-top: 20px;position: fixed; bottom: 100px; margin-left: -80px;}
+article .kiri .kiritengah h1 {color:greenyellow}
+article .kiri .kiritengah img {width: 35px; padding-right: 20px;}
+article .kiri .kiritengah img:hover {width: 50px;}
+article .kanan {width: 650px; float: right;}
+article .kanan .atas img {width: 650px; height: 340p;
+}
+article .kanan .atas p {margin-top: 20px; font-family: 'Courier New';}
+article .kanan .bawah {overflow: hidden; margin-top: 45px;}
+article .kanan .bawah .kiribawah {width: 300px; float: left; border-left: 3px solid red;}
+article .kanan .bawah .kananbawah {width: 300px; float: right; border-left: 3px solid red;}
+article .kanan .bawah .kananbawah img {width: 45px; margin-left: 12px;}
+article .kanan .bawah h1,p {margin-left: 10px;}
+
+
+
+
+.bawah {overflow: hidden; margin-top: 25px;}
+.bawah .kolomkiribawah {width: 300px; float: left; padding-right: 50px;}
+.bawah .kolomkiribawah img {width: 100px; height: 100px; float: left; padding: 6px 10px 0 10px;}
+.bawah .kolomkiribawah h3{font-size: 20px; text-align: center; }
+.bawah .kolomkiribawah p {margin: auto;}
+
+.bawah .bawahtengah {width: 300px; float: left; padding-right: 50px;}
+.bawah .bawahtengah img {width: 100px; height: 100px; float: left; padding: 6px 10px 0 10px;}
+.bawah .bawahtengah h3 {font-size: 20px; text-align: center;}
+.bawah .bawahtengah p {margin: auto;}
+
+.bawah .kolomkananbawah {width: 300px; float: left; }
+.bawah .kolomkananbawah img {width: 100px; height: 100px; float: left; padding: 6px 10px 0 10px;}
+.bawah .kolomkananbawah h3 {font-size: 20px; text-align: center;}
+.bawah .kolomkananbawah p {margin: auto;}
+
+.judulbawahbawah h1 {	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px; 
+	font-size: 20px;
+	font-family: 'Courier New';
+	color: #ca992f;
+}
+
+.judulbawahbawah p {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10px;
+	font-size: 20px;
+	font-family: 'Courier New';
+	
+}
+
+
+.subscrition {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10px;
+	background-color:rgb(209, 209, 209);
+}
+
+.subscrition .card {
+	position: relative;
+	width: 400px;
+	height: 350px;
+	margin: 10px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	background: linear-gradient(45deg,#1a2f3f,#7049ce);
+}
+
+.subscrition .card img {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	transition: 0.5s;
+	height: 300px;
+	width: 180px;
+}
+
+.subscrition .card:hover img {
+	left: 85%;
+	height: 300px;
+	width: 150px;
+}
+
+.container .card .content {
+	position: relative;
+	width: 35%;
+	left: 80%;
+	padding: 30px 20px 20px 40px;
+	transition: 0.5s;
+	text-align: center;
+	opacity: 0;
+	visibility: hidden;
+	margin-bottom: 50px;
+}
+
+.container .card:hover .content {
+	left:0;
+	opacity: 5;
+	visibility: visible;
+}
+
+.container .card .content h2 {
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+	font-size: 2em;
+	line-height: 1em;
+	margin-top: 10px;
+}
+
+.container .card .content p {
+	color: rgb(238, 164, 5);
+}
+
+.container .card .content a {
+	position: relative;
+	color: rgb(238, 252, 160);
+	background: rgb(80, 80, 80);
+	display: inline-block;
+	padding: 10px 20px;
+	margin-top: 10px;
+	text-decoration: none;
+}
+
+.container .card .content:hover a{
+	background: rgb(158, 25, 25);
+	color: #00ff55;
+}
+
+.section {
+	position: relative;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	margin-bottom: 20px;
+	height: 800px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+  
+.section h1 {
+	text-align: center;
+	font-size: 2rem;
+	font-family: "Cookie";
+	z-index: 1;
+	opacity: 0.7;
+	margin-bottom: 600px;
+    margin-left: 90px;
+	position: absolute;
+	color: rgb(238, 164, 5); 
+	margin-right: 100px;
+	width: 100%;
+}
+  
+.video-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.garisbatas-hr {
+	margin-top: 100px;
+	background: #77777762;
+	height: 1px;
+	border: none;
+}
+  
+.containerbawah {
+	padding-top: 0;
+	padding-bottom: 70px;
+	margin-top: -50px;
+}
+.kolombawahkiri {
+	justify-content: center;
+	display: flex;
+}
+  
+.kolombawahbawah {
+	width: 380px;
+	height: 290px;
+	margin: 20px;
+	border-radius: 10px;
+	padding-top: 90px;
+}
+  
+.aboutbawah {
+	width: 1000px;
+}
+  
+.logobawah {
+	display: flex;
+}
+  
+.logobawah img {
+	width: 100px;
+	height: 50px;
+	margin-top: 30px;
+}
+  
+.textbawahbawah {
+	width: 400px;
+	font-weight: bold;
+	font-size: 15px;
+	margin-right: 30px;
+	margin-top: 30px;
+	color: rgb(255, 145, 0);
+}
+.socialmedia {
+	margin-top: 30px;
+	font-size: 20px;
+    float: left;
+}
+  
+.socialmedia i {
+	color: white;
+	background: rgba(46, 46, 46, 0.452);
+	padding: 8px;
+	border: 0.5px solid white;
+	transition: 0.6s ease;
+	border-radius: 100px;
+}
+  
+.socialmedia i:hover {
+	color: white;
+	background-color: #ffa600;
+}
+  
+.classbawah {
+	margin-top: 130px;
+	margin-left: 100px;
+    padding-right: 100px;
+}
+  
+.bagiantengah h3 {
+	font-size: 20px;
+	padding-bottom: 25px;
+}
+  
+.classbawah li {
+	line-height: 30px;
+	list-style: square;
+	font-weight: bold;
+	color: #ffa600;
+}
+  
+.classbawah li a {
+	text-decoration: none;
+	color: rgba(0, 0, 0, 0.541);
+	transition: 0.6s ease;
+}
+  
+.classbawah li a:hover {
+	color: #e6a10c;
+}
+  
+.kolom1 {
+	padding-left: 10px;
+}
+  
+.kolom2 {
+    float: left;
+	
+}
+  
+.information {
+	width: 300px;
+	margin-top: 130px;
+	margin-left: 10px;
+}
+  
+.contactinformation h4 {
+	font-size: 20px;
+	padding-bottom: 20px;
+    padding-left: 5px;
+}
+  
+.end p {
+	margin-top: 40px;
+	text-align: justify;
+	font-weight: bold;
+	color: rgba(0, 0, 0, 0.541);
+}
+  
+.datadiri {
+	line-height: 30px;
+	font-weight: bold;
+	color: rgba(0, 0, 0, 0.541);
+	list-style: none;
+	margin-top: 20px;
+    margin-left: 12px;
+}
+  
+.datadiri a {
+	color: #e6a10c;
+	margin-left: 20px;
+	text-decoration: none;
+    padding-right: 10px;
+}
+  
+
+.kakifooter {
+	margin: auto;
+	background: #8f8f8f9a;
+	color: rgba(0, 0, 0, 0.541);
+	text-align: center;
+	font-weight: 700;
+	font-size: 15px;
+	line-height: 70px;
+	height: 70px;
+	width: 100%;
+}
+  
+.kakifooter a {
+	color: white;
+	text-decoration: none;
+	color: #ff0000;
+}
+  
+.kakifooter a:hover {
+	color: #1a02f3;
+}
+
